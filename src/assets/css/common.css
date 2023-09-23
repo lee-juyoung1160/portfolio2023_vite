@@ -1,0 +1,52 @@
+/* common */
+body.scroll__hidden {overflow: hidden;}
+
+/* header */
+header {display: flex; justify-content: space-between; position: fixed; left: 0; top: 0; width: 100%; padding: 30px 60px; box-sizing: border-box; z-index: 100; transition: .3s; mix-blend-mode: difference;}
+header.active {transform: translateY(-100%);}
+header .menu__open {display: none;}
+.header__nav ul {display: flex; justify-content: space-between;}
+.header__nav ul li {margin-left: 7rem;}
+.header__nav__mo {display: none;}
+
+
+
+
+/* header__nav hover */
+/* .header__nav ul li .char {display: inline-block; position: relative; color: transparent; overflow: hidden;}
+.header__nav ul li .char:before, .header__nav ul li .char:after {position: absolute; top: 0; left: 0; opacity: .6; content: attr(data-char); transition: transform .35s; transition-delay: calc(30ms * var(--char-index));}
+.header__nav ul li .char:before {transform: translateY(100%);}
+.header__nav ul li:hover .char:before {transform: translateY(0%); opacity: 1;}
+.header__nav ul li:hover .char:after {transform: translateY(100%); opacity: 0;} */
+
+
+/*  820 ~ 501 */
+@media screen and (max-width: 820px) {
+
+
+    header {padding: 3% 5%; mix-blend-mode: normal;}
+    
+    .header__nav__mo {display: block; width: 32px; height: 32px; z-index: 1001; transition: top .5s; }
+    .header__nav__mo span {display: block; position: relative; width: 100%; height: 1px; background-color:var(--white); transition: .3s;}
+    .header__nav__mo span:before, 
+    .header__nav__mo span:after {content: ''; position: absolute; left: 0; width: 100%; height: 1px; background-color:var(--white); transition: .3s;}
+    .header__nav__mo span:before {top:8px;}
+    .header__nav__mo span:after {bottom:8px;}
+   
+   .header__nav {overflow: hidden; position: fixed; left: 0; width: 0%; height: 0%; color:var(--black); background-color:var(--white); z-index: 1000; transition: top .5s;}
+   .header__nav ul {display: block; width: 80%; margin: 10% auto;}
+   .header__nav ul li {margin-left: 0; font-size: 16vw; line-height: 1.2; letter-spacing: -1px;}
+   .header__nav ul li .char {overflow: inherit; color:var(--black); }
+   .header__nav ul li .char:before, .gnb ul li .char:after {display: none;}
+   .header__nav.active {top:0; width: 100%; height: 100vh;}
+   
+   header .header__nav__mo.active span {background-color:transparent; z-index: 1001;}
+   header .header__nav__mo.active span:before {transform: rotate(45deg) translate(5px, 5px); top:-4px; background-color:var(--black);}
+   header .header__nav__mo.active span:after {transform: rotate(-45deg) translate(2px, -1px); bottom: -4px; background-color:var(--black);}
+
+
+    
+
+}
+
+

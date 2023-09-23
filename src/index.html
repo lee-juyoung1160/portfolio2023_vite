@@ -28,8 +28,25 @@
     </div>
     <!-- //skip -->
 
-    <header id="header" role="banner">
-        header
+    <header id="header" role="header">
+        <h1 class="header__logo"><a href="/"><span>julia</span> Portfolio</a></h1>
+            <nav class="header__nav" role="navigation" aria-label="메인 메뉴">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Skill</a></li>
+                    <li><a href="#">Contant</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="header__nav__mo" 
+                id="headerToggle" 
+                aria-controls="primary-menu" 
+                aria-expanded="false" 
+                role="button" 
+                tabindex="0">
+                <span></span>
+            </button>
     </header>
     <!-- //header -->
 
@@ -61,6 +78,12 @@
         footer
     </footer>
     <!-- //footer -->
+
+    <!-- cursor custom -->
+    <div id="cursor">
+        <div class="cursor__circle"></div>
+    </div>
+
     <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>

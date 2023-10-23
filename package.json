@@ -9,10 +9,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "vite-plugin-html": "^3.2.0"
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.23",
-    "gsap": "^3.12.2"
+    "gsap": "^3.12.2",
+    "lottie-react": "^2.4.0"
   }
 }

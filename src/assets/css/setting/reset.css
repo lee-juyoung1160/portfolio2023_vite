@@ -102,7 +102,7 @@ meter {
 }
 
 /* 스킵메뉴 */
-#skip a {
+.skip a {
     position: absolute;
     left: 10px;
     top: -92px;
@@ -112,7 +112,7 @@ meter {
     color: var(--white);
     background: var(--black);
 }
-#skip a:focus,
-#skip a:active {
+.skip a:focus,
+.skip a:active {
     top: 10px;
 }

@@ -11,4 +11,7 @@
 /* common - header, footer */
 @import url(common.css);
 
+/* modal */
+@import url(modal.css);
+
 

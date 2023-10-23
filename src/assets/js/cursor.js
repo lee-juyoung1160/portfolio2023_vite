@@ -58,7 +58,7 @@ export function cursor() {
         aTag.setAttribute("cursor-class", "arrow");
     });
 
-    var aTags = Array.from(document.querySelectorAll(".mySkill li"));
+    var aTags = Array.from(document.querySelectorAll(".skill__list li"));
     aTags.forEach(function(aTag) {
         aTag.setAttribute("cursor-class", "arrow");
     });

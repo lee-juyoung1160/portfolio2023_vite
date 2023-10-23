@@ -28,8 +28,8 @@
     }
 
     #cursor.arrow .cursor__circle{
-        width: 70px;
-        height: 70px;
+        width: 90px;
+        height: 90px;
         mix-blend-mode: difference; /*사용자 수정*/
         background-color:yellowgreen;
     }

@@ -24,7 +24,6 @@ export function main() {
 
 
     //스킬
-
     const horSection = gsap.utils.toArray(".skill__item");
     gsap.to(horSection, {
         xPercent: -100 * (horSection.length),
@@ -43,6 +42,20 @@ export function main() {
     });
 
 
-
-    
+    //lottie
+    animation1 = bodymovin.loadAnimation({ 
+        container: document.getElementById("aboutLottie__01"), 
+        renderer: "svg", 
+        loop: true,
+        autoplay: true,
+        path: "/lottie/about_ani_02.json"
+    });
+    animation2 = bodymovin.loadAnimation({ 
+        container: document.getElementById("aboutLottie__02"), 
+        renderer: "svg", 
+        loop: true, 
+        autoplay: true, 
+        path: "/lottie/about_ani_01.json" 
+    });
+  
 }

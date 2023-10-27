@@ -41,21 +41,4 @@ export function main() {
         },
     });
 
-
-    //lottie
-    animation1 = bodymovin.loadAnimation({ 
-        container: document.getElementById("aboutLottie__01"), 
-        renderer: "svg", 
-        loop: true,
-        autoplay: true,
-        path: "../assets/js/lottie/about_ani_02.json"
-    });
-    animation2 = bodymovin.loadAnimation({ 
-        container: document.getElementById("aboutLottie__02"), 
-        renderer: "svg", 
-        loop: true, 
-        autoplay: true, 
-        path: "../assets/js/lottie/about_ani_01.json" 
-    });
-  
 }
